@@ -36,8 +36,8 @@ export default function EditCandidatePage() {
         position: data.position,
         department: data.department,
         employmentType: data.employmentType,
-        salary: data.salary.toString(),
-        startDate: data.startDate.split('T')[0],
+        salary: data.salary?.toString() ?? '',
+       startDate: data.startDate?.split('T')[0] ?? '',
         companyRepName: data.companyRepName,
       })
       setFetching(false)
